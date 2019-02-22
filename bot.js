@@ -1,6 +1,9 @@
+const Discord = require("discord.js");
+const client = new Discord.Client();
+
 client.on("message", async message => {
             if(!message.channel.guild) return;
-            var prefix = "*";
+            var prefix = "!";
         if(message.content.startsWith(prefix + 'invites')) {
         var nul = 0
         var guild = message.guild
@@ -57,3 +60,5 @@ return;
 }
 
 });
+
+client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
