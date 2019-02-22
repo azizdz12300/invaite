@@ -26,6 +26,6 @@ client.on("guildMemberAdd", member => {
   member.addRole(Rrole); 
  
       
-      
+client.login(process.env.BOT_TOKEN);      
       }); 
 }); 
